@@ -185,6 +185,76 @@ body {
     background-color: rgba(255, 255, 255, 0.278);
     opacity: 0.702;
 }
+
+.about_section {
+    display: flex;
+    flex: 1 0 100%;
+    position: relative;
+    background-image: url("images/AboutSectionBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: row;
+      
+}
+
+.about_background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.about_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.8%;
+    margin-left: 19px;
+}
+
+.about_textcook {
+    display:block;
+    align-items: center;
+}
+
+.about_head {
+    font-size: 36px;
+    font-family: "Yeseva One";
+    color: rgb(204, 153, 0);
+    line-height: 0.667;
+    text-align: center;
+    margin-bottom: 1%;      
+}
+
+.about_divider {
+    width: fit-content;
+    margin: 5.5% auto 5.3% auto;
+    
+}
+
+.about_text {
+    font-size: 16px;
+    font-family: "Lato";
+    color: rgb(76, 76, 76);
+    line-height: 1.5;
+    text-align: center;   
+}
+
+.about_cook {
+    display: block;
+    text-align: center;
+    margin-left: 17%;
+    margin-top: 12%;
+    
+}
+
+.about_dish {
+    display:block;
+    text-align: center;
+    position: relative;
+    top: 16px;
+    left: 3.5%;
+}
   
 @media (max-width: 1280px) {
     .promo_text {
