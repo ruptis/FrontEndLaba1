@@ -44,24 +44,25 @@ section {
 }
 
 .header {
-    position: absolute;
+    position: fixed;
     width: 100%;
-    height: 110px;
+    height: 130px;
     z-index: 100;
-    background-image: url("images/HeaderBackground.png");
+    /* background-image: url("images/HeaderBackground.png"); */
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0));
     background-size: auto 100%;
 } 
 
 .header_row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 }
 
 .header_logo {
-    width: 140px;
+    width: fit-content;
     margin-left: 17px;
-    margin-top: calc(20px + (27 * ((100vw - 550px) / 1280)));
+    margin-top: 45px;
     font-size: 36px;
     font-family: "Yeseva One";
     color: rgb(255, 255, 255);
@@ -71,31 +72,37 @@ section {
 
 .header_content {
     display: flex;
-    justify-content: end;
+    justify-content: stretch;
 }
 
 .header_menu {
-    height: calc(50px + (20 * ((100vw - 550px) / 1280)));
+    margin-bottom: 7.5px;
+    margin-left: 60px;
 }
 
 .header_menu_list {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-left: 60px;
-    margin-top: -5px;
+    align-items: stretch;
     height: 100%;
 }
 
 .header_menu_list li {
     height: 100%;
     width: auto;
+    margin-top: 3px;
     margin-left: 30px;
     padding-left: 10px;
     padding-right: 10px;
     display: flex;
     justify-content: end;
     align-items: flex-end;
+}
+
+.header_menu_list li:hover {
+    border-top: 3px solid rgb(255, 255, 255);
+    opacity: 0.71;
+    margin-top: 0px;
 }
 
 .header_menu_link {
@@ -105,11 +112,6 @@ section {
     font-weight: 600;
     letter-spacing: 0.5px;
     line-height: 0.8;
-}
-
-.header_menu_list li:hover {
-    border-top: 10px solid rgb(255, 255, 255);
-    opacity: 0.71;
 }
 
 .header_icons {
@@ -172,18 +174,16 @@ section {
     width: 226px;
     height: 55px;
     border-width: 1px;
-    border-color: rgb(255, 255, 255);
     border-style: solid;
-    background-color: rgba(255, 255, 255, 0.278);
-    opacity: 0.702;
+    border-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.702);
+    opacity: 0.8;
 }
 
 .button:hover {
-    border-width: 1px;
-    border-color: rgb(0, 0, 0);
-    border-style: solid;
-    background-color: rgba(0, 0, 0, 0.702);
-    opacity: 0.8;
+    border-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.278);
+    opacity: 0.702;
 }
 
 .button_black {
@@ -207,11 +207,6 @@ section {
     background-image: url("images/AboutSectionBackground.png");
     flex-direction: row;
     max-height: 710px;  
-}
-
-.about_background {
-    position: absolute;
-    max-width: 100%;
 }
 
 .about_row {
@@ -308,17 +303,29 @@ section {
   
   
 @media (max-width: 1280px) {
+    .header_logo {
+        margin-top: calc(30px + (15 * (100vw - 550px) / 730));
+    }
+    .header_menu {
+        margin-left: calc(0px + (60 * ((100vw - 1120px) / 160)));;
+    }
     .promo_text {
-        font-size: calc(35px + 55 * ((100vw - 550px) / 960));
+        font-size: calc(35px + 55 * ((100vw - 550px) / 730));
     }
     .header_menu_list li {
-        margin-left: calc(0px + (30 * ((100vw - 550px) / 960)));;
+        margin-left: calc(0px + (30 * ((100vw - 550px) / 730)));;
     }
     .ingredients_text_block {
-        width: 430px;
-        height: 417px;
-        margin: 100px 40px 100px calc(0px + (540 * (100vw - 550px) / 960));
-        padding: calc(45px + (25 * (100vw - 550px) / 960))
+        margin: 100px 40px 100px calc(0px + (540 * (100vw - 550px) / 730));
+        padding: calc(45px + (25 * (100vw - 550px) / 730))
     }
 }
+
+@media (max-width: 1120px) {
+    .header_content {
+        display: none;
+    }
+}
+
+
   
