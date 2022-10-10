@@ -32,14 +32,25 @@ body {
     margin: 0 auto;
 }
 
+section {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex: 1 0 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .header {
     position: absolute;
     width: 100%;
     height: 110px;
     z-index: 100;
-    background-image: url("images/bg.png");
+    background-image: url("images/HeaderBackground.png");
     background-size: auto 100%;
-}
+} 
 
 .header_row {
     display: flex;
@@ -50,7 +61,7 @@ body {
 .header_logo {
     width: 140px;
     margin-left: 17px;
-    margin-top: calc(20px + (27 * ((100vw - 320px) / 1280)));
+    margin-top: calc(20px + (27 * ((100vw - 550px) / 1280)));
     font-size: 36px;
     font-family: "Yeseva One";
     color: rgb(255, 255, 255);
@@ -64,7 +75,7 @@ body {
 }
 
 .header_menu {
-    height: calc(50px + (20 * ((100vw - 320px) / 1280)));
+    height: calc(50px + (20 * ((100vw - 550px) / 1280)));
 }
 
 .header_menu_list {
@@ -105,7 +116,6 @@ body {
     font-size: 21px;
     font-family: "FontAwesome";
     font-style: normal;
-    color: rgb(218, 179, 62);
     line-height: 1.2;
     display: flex;
     align-items: flex-end;
@@ -114,6 +124,7 @@ body {
 }
 
 .header_icons a {
+    color: rgb(218, 179, 62);
     margin-left: 16px;
 }
 
@@ -126,15 +137,7 @@ body {
 }
   
 .promo_section {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    flex: 1 0 100%;
-    position: relative;
     background-image: url("images/PromoSectionBackground.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .promo_text {
@@ -168,6 +171,19 @@ body {
     margin: 0 15px;
     width: 226px;
     height: 55px;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0.278);
+    opacity: 0.702;
+}
+
+.button:hover {
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.702);
+    opacity: 0.8;
 }
 
 .button_black {
@@ -255,13 +271,61 @@ body {
     top: 16px;
     left: 3.5%;
 }
+.ingredients_section {
+    background-image: url("images/IngredientsSectionBackground.png");
+}
+
+.ingredients_text_block {
+    width: 430px;
+    height: 417px;
+    margin: 100px 40px 100px 640px;
+    background-color: rgba(0, 0, 0, 0.671);
+    padding: 70px;
+}
+
+.ingredients_text_block h1 {
+    font-size: 36px;
+    font-weight: 100;
+    font-family: "Yeseva One";
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    text-align: center;
+}
+
+.ingredients_divider {
+    width: fit-content;
+    margin: 9px auto 19px auto;
+}
+
+.ingredients_text {
+    height: 115px;
+    font-size: 16px;
+    font-family: "Lato";
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    text-align: center;
+}
+
+.ingredients_images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 72px 0px 0px 0px;
+}
+  
   
 @media (max-width: 1280px) {
     .promo_text {
-        font-size: calc(35px + 55 * ((100vw - 320px) / 960));
+        font-size: calc(35px + 55 * ((100vw - 550px) / 960));
     }
     .header_menu_list li {
-        margin-left: calc(0px + (30 * ((100vw - 320px) / 960)));;
+        margin-left: calc(0px + (30 * ((100vw - 550px) / 960)));;
+    }
+    .ingredients_text_block {
+        width: 430px;
+        height: 417px;
+        margin: 100px 40px 100px calc(0px + (540 * (100vw - 550px) / 960));
+        padding: calc(45px + (25 * (100vw - 550px) / 960))
     }
 }
   
