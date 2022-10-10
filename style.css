@@ -203,28 +203,21 @@ section {
 }
 
 .about_section {
-    display: flex;
-    flex: 1 0 100%;
     position: relative;
     background-image: url("images/AboutSectionBackground.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     flex-direction: row;
-      
+    max-height: 710px;  
 }
 
 .about_background {
     position: absolute;
-    height: 100%;
-    width: 100%;
+    max-width: 100%;
 }
 
 .about_row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 3.8%;
     margin-left: 19px;
 }
 
