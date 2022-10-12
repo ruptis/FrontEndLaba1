@@ -279,7 +279,6 @@ section {
 }
 
 .ingredients_text_block {
-    position: static;
     width: 430px;
     height: 417px;
     margin: 100px 40px 100px 640px;
@@ -316,8 +315,76 @@ section {
     align-items: center;
     margin: 74px 20px 0px 20px;
 }
-  
-  
+
+
+footer {
+    background-color: rgb(25, 25, 25);
+}  
+.footer_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 57px 110px 65px 55px;
+}
+.footer_column {
+    text-align: center;
+}
+.footer_column h1 {
+    font-size: 21px;
+    font-family: "Yeseva One";
+    font-weight: 100;
+    color: rgb(254, 254, 254);
+    line-height: 1.143;
+    text-align: center;   
+}
+.footer_column p {
+    font-size: 16px;
+    font-family: "Open Sans";
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    text-align: center; 
+}
+.footer_column img {
+    margin: 16px;
+}
+.footer_about {
+    flex-basis: 370px;
+}
+.footer_hours {
+    flex-basis: 230px;
+    margin-right: 68px;
+}
+.footer_hours div {
+    margin-top: 20px;
+}
+.footer_location {
+    flex-basis: 230px;
+    margin-right: 13px;
+}
+.footer_location div {
+    margin-top: 48px;
+    margin-right: 69px;
+    margin-left: 75px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+
+    font-family: "Font Awesome";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;    
+}
+.footer_location div a{
+    color: rgb(255, 255, 255)  
+}
+.footer_location div a:hover{
+    opacity: 0.71;
+}
+
+
+
 @media (max-width: 1280px) {
     .header_logo {
         margin-top: calc(30px + (15 * (100vw - 550px) / 730));
@@ -339,6 +406,9 @@ section {
     .ingredients_text_block {
         margin: 100px calc(0px + (40 * (100vw - 550px) / 730)) 100px calc(0px + (540 * (100vw - 550px) / 730));
         padding: calc(55px + (15 * (100vw - 320px) / 960))
+    }
+    .footer_column {
+        margin: 0;
     }
 }
 
@@ -398,18 +468,19 @@ section {
         width: 45px;
         height: 32px;
         margin-top: 22px;
-        transition: all 0.5s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
     }
     .header_burger span {
         background-color: rgb(255, 255, 255);
         border-radius: 10px;
         width: 40px;
         height: 4px;
-        transition: all 0.5s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
     .header_burger.active span {
         background-color: transparent;
-        transform: translateX(-50px);
+        transform: translateX(-30px);
     }
     .header_burger span::before,
     .header_burger span::after {
@@ -419,19 +490,19 @@ section {
         border-radius: 10px;
         width: 40px;
         height: 4px;
-        transition: all 0.5s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
     .header_burger span::before {
         transform: translateY(-13px);
     }
     .header_burger.active span::before {
-        transform: rotate(45deg) translate(40px, -40px);
+        transform: rotate(45deg) translate(20px, -20px);
     }
     .header_burger span::after {
         transform: translateY(13px);
     }
     .header_burger.active span::after {
-        transform: rotate(-45deg) translate(40px, 40px);
+        transform: rotate(-45deg) translate(20px, 20px);
     }
     .promo_buttons {
         justify-content: space-between;
@@ -457,6 +528,15 @@ section {
     .ingredients_text_block {
         width: fit-content;
         margin: 10px 0px 10px 0px;
+    }
+    .footer_row {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+    .footer_column {
+        flex-basis: auto;
+        margin-bottom: 30px;
     }
 }
 
