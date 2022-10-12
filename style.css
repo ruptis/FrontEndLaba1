@@ -356,7 +356,12 @@ footer {
     margin-right: 68px;
 }
 .footer_hours div {
-    margin-top: 20px;
+    margin-top: 48px;
+    margin-right: 55px;
+    margin-left: 58px;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(255, 255, 255)
 }
 .footer_location {
     flex-basis: 230px;
@@ -367,14 +372,7 @@ footer {
     margin-right: 69px;
     margin-left: 75px;
     display: flex;
-    justify-content: space-between;
-    font-size: 16px;
-
-    font-family: "Font Awesome";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    line-height: 1.5;
-    text-align: center;    
+    justify-content: space-between;   
 }
 .footer_location div a{
     color: rgb(255, 255, 255)  
@@ -382,8 +380,6 @@ footer {
 .footer_location div a:hover{
     opacity: 0.71;
 }
-
-
 
 @media (max-width: 1280px) {
     .header_logo {
