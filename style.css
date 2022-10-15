@@ -308,6 +308,7 @@ section {
     line-height: 1.5;
     text-align: center;
 }
+  
 
 .ingredients_images {
     display: flex;
@@ -316,6 +317,69 @@ section {
     margin: 74px 20px 0px 20px;
 }
 
+
+.reviews_section 
+{
+    background-image: url("images/ReviewBackground.png");
+    justify-content: end;
+}
+
+.review_text_block 
+{
+    background-image: url("images/Review Text Background.png");
+    width: 770px;
+    height: 416px;
+    padding-top: 69px;
+    padding-bottom: 69px;
+}
+  
+.review_text_block h1
+{   
+    font-size: 36px;
+    font-weight: 100;
+    font-family: "Yeseva One";
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    text-align: center;
+}
+.review_divider
+{
+    width: fit-content;
+    margin: 9px auto 19px auto;
+}
+
+
+.RStext
+{
+    font-size: 25px;
+    font-family: "GentiumBookBasic";
+    color: rgb(221, 224, 223);
+    font-weight: bold;
+    line-height: 1.8;
+    text-align: center;
+    padding: 0px 70px 0px 67px;
+    margin: -30px 0px 0px 0px;
+}
+
+.RSquote
+{
+    font-size: 96px;
+    font-family: "Georgia";
+    color: rgba(242, 244, 244, 0.471);
+    line-height: 0.469;
+    margin: 26px 0px -53px 25px;
+}
+
+.RSend
+{
+    font-size: 17px;
+    font-family: "Lato";
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    text-align: center;
+    margin: 29px 5px 0px 0px;
+}
+  
 
 footer {
     background-color: rgb(25, 25, 25);
