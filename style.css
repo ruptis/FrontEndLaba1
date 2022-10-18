@@ -327,6 +327,8 @@ section {
 .review_text_block 
 {
     background-image: url("images/Review Text Background.png");
+    background-position: center;
+    background-size: cover;
     width: 770px;
     height: 416px;
     padding-top: 69px;
@@ -342,23 +344,17 @@ section {
     line-height: 1.5;
     text-align: center;
 }
+
 .review_divider
 {
     width: fit-content;
-    margin: 9px auto 19px auto;
+    margin: 9px auto 15.1px auto;
 }
 
-
-.RStext
-{
-    font-size: 25px;
-    font-family: "GentiumBookBasic";
-    color: rgb(221, 224, 223);
-    font-weight: bold;
-    line-height: 1.8;
-    text-align: center;
-    padding: 0px 70px 0px 67px;
-    margin: -30px 0px 0px 0px;
+.text_block {
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .RSquote
@@ -367,7 +363,21 @@ section {
     font-family: "Georgia";
     color: rgba(242, 244, 244, 0.471);
     line-height: 0.469;
-    margin: 26px 0px -53px 25px;
+    text-align: center;
+    margin-top: 9px;
+    margin-left: -1.9px;
+    min-width: 39px;
+}
+
+.RStext
+{
+    font-size: 25px;
+    font-family: "Gentium Book Basic";
+    color: rgb(221, 224, 223);
+    font-weight: bold;
+    line-height: 1.8;
+    text-align: center;
+    margin-right: 39px;
 }
 
 .RSend
@@ -377,9 +387,9 @@ section {
     color: rgb(255, 255, 255);
     line-height: 1.5;
     text-align: center;
-    margin: 29px 5px 0px 0px;
-}
-  
+    margin: 30px 0px 0px 0px;
+    letter-spacing: 0.5px;
+} 
 
 footer {
     background-color: rgb(25, 25, 25);
@@ -465,7 +475,7 @@ footer {
     }
     .ingredients_text_block {
         margin: 100px calc(0px + (40 * (100vw - 550px) / 730)) 100px calc(0px + (540 * (100vw - 550px) / 730));
-        padding: calc(55px + (15 * (100vw - 320px) / 960))
+        padding: calc(55px + (15 * (100vw - 320px) / 960));
     }
     .footer_column {
         margin: 0;
@@ -588,6 +598,21 @@ footer {
     .ingredients_text_block {
         width: fit-content;
         margin: 10px 0px 10px 0px;
+    }
+    .review_text_block {
+        width: fit-content;
+        height: fit-content;
+        margin: 10px 0px 10px 0px;
+    }
+    .text_block {
+        padding-left: calc(10px + (15 * (100vw - 320px) / 530));;
+        padding-right: calc(10px + (15 * (100vw - 320px) / 530));;
+    }
+    .RSquote {
+        font-size: calc(52px + (44 * (100vw - 320px) / 530));
+    }
+    .RStext {
+        font-size: calc(20px + (5 * (100vw - 320px) / 530));
     }
     .footer_row {
         flex-direction: column;
