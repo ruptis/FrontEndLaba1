@@ -380,11 +380,12 @@ section {
 
 .menu_salads {
     margin-top: 16%;
-    margin-bottom: 22%;
+    
 }
 
 .menu_maindishes {
     margin-top: 16%;
+    margin-bottom: 22%;
 }
 
 .menu_special {
@@ -739,6 +740,13 @@ footer {
     }
     .ingredients_images img {
         margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 1060px) {
+    .menu_list {
+        flex-direction: column;
+        margin-left: 29%;
     }
 }
 
