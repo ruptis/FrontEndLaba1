@@ -316,6 +316,94 @@ section {
     margin: 74px 20px 0px 20px;
 }
 
+.menu_section {
+    background-image: url(images/MenuSectionBackground.png);
+    justify-content: center;
+    position: relative;
+}
+
+.menu_list {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 1033px;
+    margin-top: 10.6%;
+}
+
+.menu_col {
+    width: 42%;
+}
+
+.menu_list h1 {
+    font-size: 36px;
+    font-family: "Yeseva One";
+    color: rgb(204, 153, 0);
+    line-height: 0.667;
+    text-align: center;
+}
+
+.menu_dishdesc {
+    display:block;
+    align-items:flex-start;
+    font-size: 21px;
+    font-family: "Yeseva One";
+    color: rgb(200, 159, 45);
+    line-height: 1.143; 
+    margin-bottom: 7%;     
+}
+
+.menu_line img {
+    width: 100%;
+    height: auto;
+}
+
+.menu_line {
+    font-size: 20px;
+}
+
+.menu_divider {
+    width: fit-content;
+    margin: 5.5% auto 5.3% auto;
+}
+
+.menu_price_name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_recipe {
+    font-size: 16px;
+    font-family: "Lato";
+    color:dimgray;
+}
+
+.menu_salads {
+    margin-top: 16%;
+    margin-bottom: 22%;
+}
+
+.menu_maindishes {
+    margin-top: 16%;
+}
+
+.menu_special {
+    display:block;
+    font-size: 21px;
+    font-family: "Yeseva One";
+    color: rgb(200, 159, 45);
+    line-height: 1.143; 
+    background-image: url(images/MenuFeaturedItem.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position:top;
+    justify-content: center;
+    width: 430px;
+    padding: 27px 17px 15px 12px;
+    position: relative;
+    left: -14px;
+    top: -23px;
+}
+
 
 footer {
     background-color: rgb(25, 25, 25);
