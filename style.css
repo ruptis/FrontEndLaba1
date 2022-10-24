@@ -97,10 +97,14 @@ section {
     justify-content: end;
     align-items: flex-end;
     font-size: 21px;
+
+    transition: opacity .2s linear;
+    transition: border-color .2s linear;
 }
 
 .header_menu_list li:hover {
-    border-top: 3px solid rgb(255, 255, 255);
+    border-top: 3px solid;
+    border-color: rgb(255, 255, 255);
     opacity: 0.71;
     margin-top: 0px;
 }
@@ -128,6 +132,8 @@ section {
 .header_icons a {
     color: rgb(218, 179, 62);
     margin-left: 16px;
+
+    transition: opacity .1s linear;
 }
 
 .header_icons a:hover {
@@ -184,6 +190,9 @@ section {
     border-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.702);
     opacity: 0.8;
+
+    transition: opacity .1s linear;
+    transition: background-color .1s linear;
 }
 
 .button:hover {
@@ -411,6 +420,7 @@ section {
 {
     background-image: url("images/ReviewBackground.png");
     justify-content: end;
+    padding-bottom: 7px;
 }
 
 .review_text_block 
@@ -446,7 +456,7 @@ section {
     padding-right: 30px;
 }
 
-.RSquote
+.ReviewSectionQuote
 {
     font-size: 96px;
     font-family: "Georgia";
@@ -458,7 +468,7 @@ section {
     min-width: 39px;
 }
 
-.RStext
+.ReviewSectionText
 {
     font-size: 25px;
     font-family: "Gentium Book Basic";
@@ -469,7 +479,7 @@ section {
     margin-right: 39px;
 }
 
-.RSend
+.ReviewSectionEnd
 {
     font-size: 17px;
     font-family: "Lato";
@@ -479,6 +489,204 @@ section {
     margin: 30px 0px 0px 0px;
     letter-spacing: 0.5px;
 } 
+
+.reservations_section
+{
+    background-image: url("images/AboutSectionBackground.png");
+    justify-content: end;
+    flex-basis: 95%;
+}
+
+.Reservation
+{
+    display: flex;
+    margin: 42px 14px 40px;
+}
+
+.ReservationImgs
+{
+    position: relative;
+    left: calc(40/1242 * 100%);
+    width: calc(570/1242 * 100%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.Rimg
+{
+    width: calc(272 / 570 * 100%);
+}
+
+.ReservationMain
+{
+    position: relative;
+    left: calc(136/1242 * 100%);
+    width: calc(430/1242 * 100%);
+
+}
+
+.ReserwationText
+{
+    font-size: 16px;
+    font-family: "Lato";
+    color: rgb(76, 76, 76);
+    line-height: 1.5;
+    text-align: center;
+} 
+
+
+.ReserwationText.first 
+{
+    margin: 20px 16px;
+}
+.ReserwationText.second
+{
+    margin: -13px 19px;
+}
+.ReserwationText h2
+{
+    font-size: 36px;
+    font-family: "Yeseva One";
+    color: rgb(204, 153, 0);
+    line-height: 0.667;
+    margin: 3px;
+}
+.ReserwationText img
+{
+    width: fit-content;
+    margin: 22px 7px;
+}
+
+.ReservationControl
+{
+    position: relative;
+    top: 33px;
+}
+
+.ReservEditsLine
+{
+    display: flex;
+    margin: 24px 4px 0px 0px;
+    justify-content: space-between;
+    
+}
+
+.ReservEditsLine i
+{
+    position: relative;
+    left: -34px;
+    top: 28px;
+    font-size: 14px; 
+    color: gray;
+}
+
+.Edit 
+{
+    width: 200px;
+    height: 60px;
+    border-color: gray; 
+    position: relative;
+}
+
+  
+.Edit p
+{
+    position: absolute;
+    top: -5px;
+
+    font-size: 14px;
+    font-family: "Open Sans";
+    color: rgb(201, 161, 49);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+}
+.Edit input, select
+{
+    background-image: url("images/BookingInput.png");
+    position: absolute;
+    top: 19px;
+
+    opacity: 75%;
+
+    width: 200px;
+    height: 36px;
+    border: 2px;
+    outline-color: rgb(201, 161, 49);
+
+    transition:  outline-color .1s linear;
+}
+
+.Edit input:focus, select:focus
+{
+    outline-color: rgb(201, 161, 49);
+    outline-style: solid;
+    outline-width: 1px;
+}
+
+.Edit select, select optgroup
+{
+    font-size: 16px;
+    font-family: "Open Sans";
+    border-color: rgb(124, 124, 124);
+    font-style: italic;
+    line-height: 1.2;
+    text-align: left;
+    color: rgb(124, 124, 124);
+
+}
+
+
+.ReservationButton
+{
+    height: 90px;
+    display: flex;
+    align-content: center;
+    position: relative;
+}
+
+
+.ReservationButton input
+{
+    align-self: center  ;
+    
+    background-color: rgb(201, 161, 49);
+    border-style: none;
+    position: absolute;
+    left: 114px;
+    width: 200px;
+    height: 36px;
+
+
+    font-size: 16px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+
+
+    transition: color  .05s linear;
+    transition: background-color  .05s linear;
+
+}
+.ReservationButton input:hover
+{
+    background-color: white;
+    color: rgb(201, 161, 49);
+    outline-color: rgb(201, 161, 49);
+    outline-style: solid;
+    outline-width: 1px;
+}
+  
+.Edit input::placeholder
+{
+    font-size: 16px;
+    font-family: "Open Sans";
+    color: rgb(124, 124, 124);
+    font-style: italic;
+    line-height: 1.2;
+    text-align: left;   
+}
 
 footer {
     background-color: rgb(25, 25, 25);
