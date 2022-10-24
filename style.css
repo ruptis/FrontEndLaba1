@@ -552,18 +552,18 @@ section {
     font-family: "Yeseva One";
     color: rgb(204, 153, 0);
     line-height: 0.667;
-    margin: 3px;
+    margin: 5px;
 }
 .ReserwationText img
 {
     width: fit-content;
-    margin: 22px 7px;
+    margin: 20px;
 }
 
 .ReservationControl
 {
     position: relative;
-    top: 33px;
+    top: 36px;
 }
 
 .ReservEditsLine
@@ -615,7 +615,7 @@ section {
     width: 200px;
     height: 36px;
     border: 2px;
-    outline-color: rgb(201, 161, 49);
+    outline-color: gray;
 
     transition:  outline-color .1s linear;
 }
