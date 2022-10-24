@@ -432,8 +432,8 @@ section {
     background-position: center;
     background-size: cover;
     width: 770px;
-    height: 416px;
-    padding-top: 69px;
+    height: 410px;
+    padding-top: 71px;
     padding-bottom: 69px;
 }
   
@@ -511,6 +511,7 @@ section {
     position: relative;
     left: calc(40/1242 * 100%);
     width: calc(570/1242 * 100%);
+    top: 2px;
     display: flex;
     justify-content: space-between;
 }
