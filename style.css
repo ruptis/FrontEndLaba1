@@ -109,8 +109,8 @@ section {
     font-size: 100%;
     font-family: "Gentium Book Basic";
     color: rgb(255, 255, 255);
-    font-weight: 600;
-    letter-spacing: 0.5px;
+    font-weight: 100;
+    letter-spacing: 0px;
     line-height: 0.8;
 }
 
@@ -338,6 +338,7 @@ section {
 .menu_list h1 {
     font-size: 36px;
     font-family: "Yeseva One";
+    font-weight: 100;
     color: rgb(204, 153, 0);
     line-height: 0.667;
     text-align: center;
@@ -349,8 +350,8 @@ section {
     font-size: 21px;
     font-family: "Yeseva One";
     color: rgb(200, 159, 45);
-    line-height: 1.143; 
-    margin-bottom: 7%;     
+    line-height: 1.143;
+    margin-bottom: 35px;
 }
 
 .menu_line img {
@@ -360,6 +361,8 @@ section {
 
 .menu_line {
     font-size: 20px;
+    line-height: 0.2;
+    margin-bottom: 11px;
 }
 
 .menu_divider {
@@ -379,12 +382,11 @@ section {
 }
 
 .menu_salads {
-    margin-top: 16%;
-    
+    margin-top: 17%;
 }
 
 .menu_maindishes {
-    margin-top: 16%;
+    margin-top: 17%;
     margin-bottom: 22%;
 }
 
@@ -393,24 +395,26 @@ section {
     font-size: 21px;
     font-family: "Yeseva One";
     color: rgb(200, 159, 45);
-    line-height: 1.143; 
+    line-height: 1.143;
     background-image: url(images/MenuFeaturedItem.png);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     background-position:top;
     justify-content: center;
-    width: 430px;
-    padding: 27px 17px 15px 12px;
+    width: 432px;
+    padding: 27px 12px 13px 12px;
     position: relative;
-    left: -14px;
-    top: -23px;
+    left: -13px;
+    top: -26px;
 }
+
 
 
 .reviews_section 
 {
     background-image: url("images/ReviewBackground.png");
     justify-content: end;
+    flex-basis: 101.1%;
 }
 
 .review_text_block 
@@ -561,6 +565,20 @@ footer {
     }
     .promo_text {
         font-size: calc(50px + 40 * ((100vw - 550px) / 730));
+    }
+    .menu_list {
+        flex-direction: column;
+        width: 90vw;
+    }
+    .menu_col {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .menu_special {
+        width: 100%;
+        padding-right: 40px;
+        background-position: 0px;
     }
     .ingredients_text_block {
         margin: 100px calc(0px + (40 * (100vw - 550px) / 730)) 100px calc(0px + (540 * (100vw - 550px) / 730));
@@ -741,12 +759,9 @@ footer {
     .ingredients_images img {
         margin-bottom: 15px;
     }
-}
-
-@media (max-width: 1060px) {
-    .menu_list {
-        flex-direction: column;
-        margin-left: 29%;
+    .menu_special {
+        padding-right: 0px;
+        background-position: -45px;
     }
 }
 
