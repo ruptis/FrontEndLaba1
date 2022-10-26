@@ -53,8 +53,8 @@
                             <img src="images/PromoDecoration.png">
                         </div>
                         <div class="promo_buttons">
-                            <button class="button">BOOK A TABLE</button>
-                            <button class="button">SEE THE MENU</button>
+                            <button class="button" type="button" onclick="window.location.href='#reservations';">BOOK A TABLE</button>
+                            <button class="button" type="button" onclick="window.location.href='#menu';">SEE THE MENU</button>
                         </div>    
                     </div>     
                 </section>
@@ -358,9 +358,8 @@
                                                 <div class="ReservEditsLine">
                                                     <div class="Edit">
                                                         <p>Date</p>
-                                                        <input type="text" placeholder="    date *     " name="date">
+                                                        <div class="date_input"><input type="text" placeholder="    date *     " name="date" onfocus="(this.type='date')" onblur="(this.type='text')"></div>
                                                     </div>
-                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
                                                     <div class="Edit">
                                                         <p>Party number</p>
                                                         <select  name="partyNum" required>

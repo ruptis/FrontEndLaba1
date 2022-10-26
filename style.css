@@ -221,7 +221,7 @@ section {
     position: relative;
     background-image: url("images/AboutSectionBackground.png");
     flex-direction: row;
-    max-height: 710px;  
+    flex-basis: 94.6%;
 }
 
 .about_row {
@@ -497,7 +497,7 @@ section {
 {
     background-image: url("images/AboutSectionBackground.png");
     justify-content: end;
-    flex-basis: 95%;
+    flex-basis: 94.6%;
 }
 
 .Reservation
@@ -526,7 +526,6 @@ section {
     position: relative;
     left: calc(136/1242 * 100%);
     width: calc(430/1242 * 100%);
-
 }
 
 .ReserwationText
@@ -588,7 +587,7 @@ section {
 {
     width: 200px;
     height: 60px;
-    border-color: gray; 
+    border-color: gray;
     position: relative;
 }
 
@@ -646,32 +645,25 @@ section {
     height: 90px;
     display: flex;
     align-content: center;
+    justify-content: center;
     position: relative;
 }
 
 
 .ReservationButton input
 {
-    align-self: center  ;
-    
+    align-self: center;
     background-color: rgb(201, 161, 49);
     border-style: none;
-    position: absolute;
-    left: 114px;
     width: 200px;
     height: 36px;
-
-
     font-size: 16px;
     font-family: "Open Sans";
     color: rgb(255, 255, 255);
     line-height: 1.2;
     text-align: center;
-
-
     transition: color  .05s linear;
     transition: background-color  .05s linear;
-
 }
 .ReservationButton input:hover
 {
@@ -690,6 +682,28 @@ section {
     font-style: italic;
     line-height: 1.2;
     text-align: left;   
+}
+
+input::-webkit-calendar-picker-indicator {
+    opacity:0;
+}
+
+.date_input {
+    position: relative;
+    height: 36px;
+    align-self: flex-end;
+}
+
+.date_input::before {
+    content: "\f073";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 15px;
+    position:absolute;
+    right: 12px;
+    top:50%;
+    transform:translateY(70%);
+    z-index: 10;
 }
 
 footer {
@@ -791,6 +805,32 @@ footer {
     .ingredients_text_block {
         margin: 100px calc(0px + (40 * (100vw - 550px) / 730)) 100px calc(0px + (540 * (100vw - 550px) / 730));
         padding: calc(55px + (15 * (100vw - 320px) / 960));
+    }
+    .Reservation {
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .ReservationImgs {
+        width: auto;
+        left: auto;
+    }
+    .Rimg {
+        flex-basis: 48%;
+    }
+    .Rimg img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        aspect-ratio: 3/2;
+    }
+    .ReservationMain {
+        left: auto;
+        margin: auto;
+        padding-top: 10px;
+        width: clamp(420px, 70%, 500px);
     }
     .footer_column {
         margin: 0;
@@ -929,6 +969,15 @@ footer {
     .RStext {
         font-size: calc(20px + (5 * (100vw - 320px) / 530));
     }
+    .ReservationImgs {
+        flex-direction: column;
+        width: clamp(250px, 50%, 400px);
+        margin: auto;
+    }
+    .Rimg {
+        width: 100%;
+        padding-bottom: 10px;
+    }
     .footer_row {
         flex-direction: column;
         align-items: center;
@@ -970,6 +1019,16 @@ footer {
     .menu_special {
         padding-right: 0px;
         background-position: -45px;
+    }
+    .ReserwationText h2 {
+        line-height: 1.3;
+    }
+    .ReservEditsLine {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ReservationMain {
+        width: auto;
     }
 }
 
