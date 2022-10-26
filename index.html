@@ -347,25 +347,24 @@
                                                 <div class="ReservEditsLine">
                                                     <div class="Edit" active>
                                                         <p>Name</p>
-                                                        <input type="text" placeholder="   your name * " name="Name" >
+                                                        <input type="text" placeholder="   your name * " name="Name" required>
                                                     </div>
                                                     <div class="Edit">
                                                         <p>Email</p>
-                                                        <input type="text" placeholder="   your email * " name="email">
+                                                        <input type="text" placeholder="   your email * " name="email" required>
                                                     </div>
                                                 </div>
                                                 
                                                 <div class="ReservEditsLine">
                                                     <div class="Edit">
                                                         <p>Date</p>
-                                                        <div class="date_input"><input type="text" placeholder="    date *     " name="date" onfocus="(this.type='date')" onblur="(this.type='text')"></div>
+                                                        <div class="date_input"><input type="text" placeholder="    date *     " name="date" onfocus="(this.type='date')" onblur="(this.type='text')" required></div>
                                                     </div>
                                                     <div class="Edit">
                                                         <p>Party number</p>
                                                         <select  name="partyNum" required>
-                                                            
-                                                            <optgroup >
-                                                                <option value="0" selected >party number</option>
+                                                            <optgroup label="Count">
+                                                                <option value="" hidden disabled selected >party number</option>
                                                                 <option value="1">1</option>
                                                                 <option value="2">2</option>
                                                                 <option value="3">3</option>
