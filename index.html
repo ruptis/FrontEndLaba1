@@ -13,6 +13,7 @@
     <script src="https://use.fontawesome.com/5042226aea.js"></script>
 </head>
 <body>
+    
     <div class="wrapper">
         <main class="page">
             <header class="header">
@@ -341,7 +342,9 @@
                                         <p style="margin: -15px 1px"> Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly baked food.</p>
                                     </div>
                                     <div class="ReservationControl">
-                                        <form>
+                                        
+                                        <form onsubmit="sbmt(this);return false;">
+                                       
                                             <div class="ReservationEdits">
                                                 
                                                 <div class="ReservEditsLine">
@@ -377,12 +380,24 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                
-                                            </div>
-                                        
+                                            </div> 
                                             <div class="ReservationButton">
-                                                <input #href="#reservations" type="submit" value="Book now!">
+                                                <input type="submit" value="Book now!">
                                             </div>
+                                    
+                                            <div id="openModal" class="modal">
+                                                <div class="modal-dialog">
+                                                  <div class="modal-content">
+                                                    <div class="modal-header">
+                                                      <h3 class="modal-title">We'll be glad to see you!</h3>
+                                                      <a id="close" title="Close" class="close">×</a>
+                                                    </div>
+                                                    <div class="modal-body">    
+                                                      <p>Table successfully booked!</p>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
                                         </form>
                                     </div>
                             </div>
